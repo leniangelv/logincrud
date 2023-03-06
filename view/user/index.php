@@ -49,7 +49,7 @@
                     <div class="card card-body">
                         <form method="post" name="form" onsubmit="return validarform()" action="create.php">
                             <div class="form-group">
-                                <input type="text" name="cod_doctor" class="form-control" placeholder="Ingresar Numero de Inscripcion"
+                                <input type="number" name="cod_doctor" class="form-control" placeholder="Ingresar Numero de Inscripcion"
                                     autocomplete="off" autofocus>
                             </div>
                             <div class="form-group">
@@ -114,6 +114,15 @@
             </div> <!--End row-->
         </div><!--End container p-4-->
     </div><!--End container-->
+    <style type="text/css">  
+
+      input[type=number]::-webkit-inner-spin-button, 
+      input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+      }
+      input[type=number] { -moz-appearance:textfield; }
+    </style>
     <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
